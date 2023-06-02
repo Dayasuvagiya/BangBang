@@ -7,9 +7,45 @@ body {
 body{
     background-image: url("../images/main_bg.jpeg");
 }
+
+/*Welcome page style*/
+.welcome{
+    font-weight:900;
+    text-align: center;
+    margin-top: 50px; 
+}
+
+.wel-page{
+    background: #0000003d;
+    margin: 80px auto 0;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    padding: 30px;
+}
+
+.button-1page{
+    display: block;
+    margin: 10px auto 10px;
+    background-color: white;
+    font-weight: bold;
+    width: 50%;
+    height:100px;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+
+/*Game page style*/
 .mainDiv{
-    background: white;
-    margin: 100px auto 0;
+    background: #0000003d;
+    margin: 80px auto 0;
+    margin-bottom: 30px;
     border-radius: 10px;
     width: 80%;
     max-width: 600px;
@@ -17,8 +53,9 @@ body{
 
 }
 .main-heading{
-    font-weight: 900;
+    font-weight:900;
     text-align: center;
+    margin-top: 50px;
 }
 .mainDiv h1{
     font-weight: 25px;
@@ -26,6 +63,7 @@ body{
     border-bottom: 1px solid #333;
     padding-bottom: 30px;
     text-align: center;
+    color: black;
 }
 .quiz{
     padding: 20px 0;
@@ -48,10 +86,12 @@ body{
     cursor: pointer;
 }
 
-#submit{
-    background-color: rgb(193, 252, 232);
+#next{
+    background-color: rgb(155, 249, 218);
     padding: 10px;
     border-radius: 4px;
     width:20%;
     margin-top:20px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
 }
