@@ -19,9 +19,24 @@
     <h1 class="welcome">Welcome to the game zone!</h1>
     <div class="wel-page">
         <h1>learn by playing the game</h1>
-        <div class="main-buttons">
+     
+            <div class="main-buttons">
             <button class="button-1page"><i class="fa-solid fa-flag-checkered" style="color: rgb(0, 90, 60)"></i> <a class="maingame" href="game.html">Start</a></button>
-            <button class="button-1page"><i class="fa-solid fa-chalkboard-user" style="color:rgb(0, 90, 60)"></i> Instruction</button>
+               <!--
+            <button type="submit" class="button-1page" id="openButton" onclick="onPopup()"><i class="fa-solid fa-chalkboard-user" style="color:rgb(0, 90, 60)"></i> Instruction</button>
+            <div class="popup">
+                <span class="popuptext" id="myPopup">Popup text...</span>
+              </div>
+
+            -->
+
+            <button type="submit" class="button-1page" onclick="onOpenPopup()"><i class="fa-solid fa-chalkboard-user" style="color:rgb(0, 90, 60)"></i> Instruction</button>
+            <div class="popup-overlay"></div>
+            <div class="popup" id="popup1">                
+                <h2> <i class="fa-solid fa-thumbs-up fa-beat" style="color: #005a3c;"></i> Quick Quiz Challenge!</h2>
+                <p>In the quiz game, you'll face 10 questions with four answer options. Choose the correct answer and click "Next" to proceed. Good luck!</p>
+                <button type="button" id="closeButton" onclick="onClosePopup()">OK</a></button>
+            </div>
         </div>
     </div>
 
@@ -29,6 +44,7 @@
 
     <!--Font icone-->
     <script src="https://kit.fontawesome.com/670bc76ec2.js" crossorigin="anonymous"></script>
+    <!--JavaScript Page link-->
     <script src="assets/js/script.js"></script>
 
 

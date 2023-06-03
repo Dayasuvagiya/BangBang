@@ -104,9 +104,38 @@ const questions = [
         let questionNumber = document.getElementById('question-number');
         questionNumber.innerHTML = 'question: ' + currentQuestion;
         isClick = false;
+        const quizzContainer = document.getElementsByClassName('quizz-question')[0];
+        console.log(':::', quizzContainer.firstElementChild);
+        quizzContainer.removeChilde(quizzContainer.firstElementChild)
+        console.log(imgTag);
         buildQuizze();
     }
     let nextButton = document.getElementById('next');
     nextButton.addEventListener('click', onNextQuestion);
 
     
+
+
+    /*Popup for the first page instuction
+    let popup=document.getElementById("popup1");
+
+    function openPopup(){
+        popup.classList.add("open-popup");
+    }
+    
+    function closePopup(){
+        popup.classList.remove("open-popup");
+    }*/ 
+
+
+
+
+    function onOpenPopup() {
+        var popup = document.getElementById("popup1");
+        popup.classList.toggle("show");
+      }
+
+      function onClosePopup() {
+        var popup = document.getElementById("popup1");
+        popup.classList.remove("show");
+      }
