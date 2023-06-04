@@ -1,104 +1,104 @@
 const questions = [
     {
         question: "../BangBang/assets/images/srawberry.png",
-        options : [
+        answers : [
             "Die Strawberry",
             "Die Erdbeere",
             "Die Kirsche",
-            "Der Apfel",
+            "Der Apfel"
         ],
-        correctOption: [1],
+        correctOption: 'Die Erdbeere',
     },
     {
         question: "../BangBang/assets/images/bicycle.png",
-        options : [
+        answers : [
             "Das Fahrrad", 
             "Das Auto",
             "Der Bus",
             "Das Motorrad"
         ],
-        correctOption: [0]
+        correctOption: "Das Fahrrad"
     },
     {
         question: "../BangBang/assets/images/freanchfries.png",
-        options : [
+        answers : [
             "Die Kartoffel", 
             "Der Burger",
             "Die Gurke",
-            "Die Kartoffel"
+            "Die Pommes"
         ],
-        correctOption: [3]
+        correctOption: "Die Pommes"
     },
     {
         question: "../BangBang/assets/images/bag.png",
-        options : [
+        answers : [
             "Der Geldbeutel", 
             "Der Koffer",
             "Die Tasche",
             "Das Gepäck"
         ],
-        correctOption: [2]
+        correctOption: "Die Tasche"
     },
     {
         question: "../BangBang/assets/images/cake.png",
-        options : [
+        answers : [
             "Der Käse", 
             "Die Schokolade",
             "Der Kuchen",
             "Die Butter"
         ],
-        correctOption: [2]
+        correctOption: "Der Kuchen"
     },
     {
         question: "../BangBang/assets/images/dog.png",
-        options : [
+        answers : [
             "Der Hund", 
             "Das Reh",
             "Das Schwein",
             "Die Katze"
         ],
-        correctOption: [0]
+        correctOption: "Der Hund"
     },
     {
         question: "../BangBang/assets/images/flower.png",
-        options : [
+        answers : [
             "Das Gemüse", 
             "Das Obst",
             "Die Pflanze",
             "Die Blumen"
         ],
-        correctOption: [3]
+        correctOption: "Die Blumen"
     },
     {
         question: "../BangBang/assets/images/lemon.png",
-        options : [
+        answers : [
             "Die Gurke", 
             "Die Zitrone",
             "Die Zucchini",
             "Der Mais"
         ],
-        correctOption: [1]
+        correctOption: "Die Zitrone"
     },
     {
         question: "../BangBang/assets/images/plant.png",
-        options : [
+        answers : [
             "Die Pflanze", 
             "Der Baum",
             "Der Topf",
             "Die Blume"
         ],
-        correctOption: [0]
+        correctOption: "Die Pflanze"
     },
     {
         question: "../BangBang/assets/images/TV.png",
-        options : [
+        answers : [
             "Das Fenster", 
             "Der Schrank",
             "Der Schrank",
             "Der Fernseher"
         ],
-        correctOption: [0]
-    }
+        correctOption: "Der Fernseher"
+    } 
 
 ]
 
@@ -106,6 +106,7 @@ const questions = [
     let currentQuestion = 1;
     let isClick = false;
     
+
     /*answer function*/ 
     function onClickAnswer(evt){
         if(!isClick) {
@@ -114,12 +115,12 @@ const questions = [
                 evt.currentTarget.style.backgroundColor = 'green';
                 let scoreElement = document.getElementById('score');
                 scoreElement.innerHTML = scrore;
-                isClick = true;
             } else {
+
                 evt.currentTarget.style.backgroundColor = 'red';
             }
+            isClick = true;
         }
-       
     }
 
 
@@ -136,7 +137,22 @@ const questions = [
         let optionContainer=document.createElement('div');
         optionContainer.setAttribute('id','answer-button');
 
-        let optionA=document.createElement('button');
+        let options = questions[currentQuestion - 1].answers;
+        let correctAnswer = questions[currentQuestion - 1].correctOption;
+        console.log({ options})
+
+        for(let i = 0; i < options.length; i++) {
+            let option=document.createElement('button');
+            option.innerHTML= options[i];
+            option.setAttribute('class','answer');
+            option.addEventListener('click', onClickAnswer);
+            if(options[i] === correctAnswer) {
+                option.correctOption=correctAnswer;
+            }
+            optionContainer.appendChild(option);
+        }
+
+        /* let optionA=document.createElement('button');
         optionA.innerHTML=questions[currentQuestion-1].optionA;
         optionA.setAttribute('class','answer');
         optionA.addEventListener('click', onClickAnswer);
@@ -160,7 +176,7 @@ const questions = [
         optionContainer.appendChild(optionA);
         optionContainer.appendChild(optionB);
         optionContainer.appendChild(optionC);
-        optionContainer.appendChild(optionD);
+        optionContainer.appendChild(optionD); */
 
         quizz.appendChild(optionContainer);
 
@@ -168,7 +184,20 @@ const questions = [
 
     buildQuizze();
 
+    function initGame() {
+        scrore = 0;
+        currentQuestion = 1;
+        isClick = false;
+    }
+
     function onNextQuestion() {
+        if(questions.length === currentQuestion) {
+            document.getElementsByClassName('mainDiv')[0].innerHTML = `
+            <h2 class="score-info"> Your total score is ${scrore} / ${questions.length}</h2>
+            <button  id="home" ><a class="home-page" href="index.html">Play again</a></button>
+            `
+        }
+
         currentQuestion = currentQuestion + 1;
         let questionNumber = document.getElementById('question-number');
         questionNumber.innerHTML = 'question: ' + currentQuestion;
@@ -180,22 +209,7 @@ const questions = [
     let nextButton = document.getElementById('next');
     nextButton.addEventListener('click', onNextQuestion);
 
-    
-
-
-    /*Popup for the first page instuction
-    let popup=document.getElementById("popup1");
-
-    function openPopup(){
-        popup.classList.add("open-popup");
-    }
-    
-    function closePopup(){
-        popup.classList.remove("open-popup");
-    }*/ 
-
-
-
+    /*Popup for the first page instuction*/ 
 
     function onOpenPopup() {
         var popup = document.getElementById("popup1");
