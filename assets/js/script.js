@@ -1,3 +1,5 @@
+//Generate questons and options
+
 const questions = [
     {
         question: "../BangBang/assets/images/srawberry.png",
@@ -93,7 +95,7 @@ const questions = [
         question: "../BangBang/assets/images/TV.png",
         answers : [
             "Das Fenster", 
-            "Der Schrank",
+            "Der Leptop",
             "Der Schrank",
             "Der Fernseher"
         ],
@@ -107,7 +109,7 @@ const questions = [
     let isClick = false;
     
 
-    /*answer function*/ 
+    //Creat function for score counter with if statment
     function onClickAnswer(evt){
         if(!isClick) {
             if(evt.currentTarget.correctOption === questions[currentQuestion - 1].correctOption) {
@@ -124,7 +126,7 @@ const questions = [
     }
 
 
-
+    //function to get element, create attribute and set attributes for style and set images.
     function buildQuizze(){
         let quizz= document.getElementsByClassName('quizz-question')[0];
         console.log(quizz)
@@ -134,9 +136,11 @@ const questions = [
         questionImage.setAttribute('height','150px');
         quizz.appendChild(questionImage);
 
+    
         let optionContainer=document.createElement('div');
         optionContainer.setAttribute('id','answer-button');
-
+       
+    //loop for answers and given options
         let options = questions[currentQuestion - 1].answers;
         let correctAnswer = questions[currentQuestion - 1].correctOption;
         console.log({ options})
@@ -152,32 +156,6 @@ const questions = [
             optionContainer.appendChild(option);
         }
 
-        /* let optionA=document.createElement('button');
-        optionA.innerHTML=questions[currentQuestion-1].optionA;
-        optionA.setAttribute('class','answer');
-        optionA.addEventListener('click', onClickAnswer);
-
-        let optionB=document.createElement('button');
-        optionB.innerHTML=questions[currentQuestion-1].optionB;
-        optionB.setAttribute('class','answer');
-        optionB.addEventListener('click', onClickAnswer);
-
-        let optionC=document.createElement('button');
-        optionC.innerHTML=questions[currentQuestion-1].optionC;
-        optionC.setAttribute('class','answer');
-        optionC.addEventListener('click', onClickAnswer);
-
-        let optionD=document.createElement('button');
-        optionD.innerHTML=questions[currentQuestion-1].optionD;
-        optionD.setAttribute('class','answer');
-        optionD.correctOption='optionD';
-        optionD.addEventListener('click', onClickAnswer);
-
-        optionContainer.appendChild(optionA);
-        optionContainer.appendChild(optionB);
-        optionContainer.appendChild(optionC);
-        optionContainer.appendChild(optionD); */
-
         quizz.appendChild(optionContainer);
 
         }
@@ -190,14 +168,14 @@ const questions = [
         isClick = false;
     }
 
+    //Last page after complete the quizze
     function onNextQuestion() {
         if(questions.length === currentQuestion) {
             document.getElementsByClassName('mainDiv')[0].innerHTML = `
             <h2 class="score-info"> Your total score is ${scrore} / ${questions.length}</h2>
-            <button  id="home" ><a class="home-page" href="index.html">Play again</a></button>
+            <button  id="home" ><a class="home-page" href="game.html">Play again</a></button>
             `
         }
-
         currentQuestion = currentQuestion + 1;
         let questionNumber = document.getElementById('question-number');
         questionNumber.innerHTML = 'question: ' + currentQuestion;
@@ -206,10 +184,12 @@ const questions = [
         quizzContainer.innerHTML = '';
         buildQuizze();
     }
+
+    //Next button on click
     let nextButton = document.getElementById('next');
     nextButton.addEventListener('click', onNextQuestion);
 
-    /*Popup for the first page instuction*/ 
+    //Popup for the first page instuction
 
     function onOpenPopup() {
         var popup = document.getElementById("popup1");
