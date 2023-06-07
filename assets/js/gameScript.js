@@ -141,7 +141,6 @@ const questions = [
     //function to get element, create attribute and set attributes for style and set images.
     function buildQuizze(){
         let quizz= document.getElementsByClassName('quizz-question')[0];
-        console.log(quizz);
         let questionImage= document.createElement('img');
         questionImage.setAttribute('alt',questions[currentQuestion-1].alter);
         questionImage.setAttribute('src',questions[currentQuestion-1].question);
@@ -156,7 +155,6 @@ const questions = [
     //loop for answers and given options
         let options = questions[currentQuestion - 1].answers;
         let correctAnswer = questions[currentQuestion - 1].correctOption;
-        console.log({ options});
 
         for(let i = 0; i < options.length; i++) {
             let option=document.createElement('button');
@@ -191,8 +189,7 @@ const questions = [
             <h2 class="score-info"> Congratulation! Your total score is ${scrore} / ${questions.length}</h2>
             <a class="home-page" href="game.html"><button  id="home" >Play again</button></a>
             `
-        }
-        if (currentQuestion < questions.length) {
+        } else if (currentQuestion < questions.length) {
             currentQuestion = currentQuestion + 1;
             let questionNumber = document.getElementById('question-number');
             questionNumber.innerHTML = 'question: ' + currentQuestion;
@@ -200,7 +197,10 @@ const questions = [
             const quizzContainer = document.getElementsByClassName('quizz-question')[0];
             quizzContainer.innerHTML = '';
             buildQuizze();
+        } else {
+            throw('Something went wrong....!')
         }
+        
     }
 
     //Next button on click
