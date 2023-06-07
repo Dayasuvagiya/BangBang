@@ -8,27 +8,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;900&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="assets/css/style.css">
     <title>BangBang</title>
+    <link rel="icon" href="../BangBang/assets/fevicon.ico/logo.png" type="image/x.icon">
 </head>
 <body>
     <section>
-        <h1 class="logo">BangBang <i class="fa-solid fa-chess-knight" style="color: rgb(0, 90, 60)"></i></h1>
+        <h1 class="logo">BangBang <i class="fa-solid fa-chess-knight"></i></h1>
     </section>
-    <h1 class="welcome">Welcome to the game zone!</h1>
+    <h2 class="welcome">Welcome to the game zone!</h2>
     <div class="wel-page">
-        <h1>learn by playing the game</h1>
+        <h2>learn by playing the game</h2>
      
             <div class="main-buttons">
-            <button class="button-1page"><i class="fa-solid fa-flag-checkered" style="color: rgb(0, 90, 60)"></i> <a class="maingame" href="game.html">Start</a></button>
+                <a href="game.html" class="maingame"><button class="button-1page"><i class="fa-solid fa-flag-checkered"></i> Start</button></a>
     <!--Instruction button with popup-->
-            <button type="submit" class="button-1page" onclick="onOpenPopup()"><i class="fa-solid fa-chalkboard-user" style="color:rgb(0, 90, 60)"></i> Instruction</button>
-            <div class="popup-overlay"></div>
-            <div class="popup" id="popup1">                
-                <h2> <i class="fa-solid fa-thumbs-up fa-beat" style="color: #005a3c;"></i> Quick Quiz Challenge!</h2>
-                <p>This game offers a unique method to enhance your German vocabulary through visual representations, which is considered the most effective approach for word retention.<br>In the quiz game, you'll face 10 questions with four answer options. Choose the correct answer and click "Next" to proceed.<br> Good luck!</p>
-                <button type="button" id="closeButton" onclick="onClosePopup()">OK</a></button>
+                <button type="submit" class="button-1page" onclick="onOpenPopup()"><i class="fa-solid fa-chalkboard-user"></i> Instruction</button>
+                <div class="popup-overlay"></div>
+                <div class="popup" id="popup1">                
+                    <h2> <i class="fa-solid fa-thumbs-up fa-beat"></i> Quick Quiz Challenge!</h2>
+                    <p>This game offers a unique method to enhance your German vocabulary through visual representations, which is considered the most effective approach for word retention.<br>In the quiz game, you'll face 10 questions with four answer options. Choose the correct answer and click "Next" to proceed.<br> Good luck!</p>
+                    <button type="button" id="closeButton" onclick="onClosePopup()">OK</button>
             </div>
         </div>
     </div>

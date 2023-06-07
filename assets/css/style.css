@@ -19,9 +19,10 @@ body{
 }
 
 .welcome{
-    font-weight:700;
+    font-weight:bold;
     text-align: center;
     margin-top: 50px; 
+    font-size: 25px;
 }
 
 .wel-page{
@@ -34,9 +35,9 @@ body{
     padding: 30px;
 }
 
-.wel-page h1{
+.wel-page h2{
     text-align: center;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .maingame{
@@ -64,6 +65,9 @@ body{
     font-size: 24px;
     color:rgb(0, 90, 60);
 }
+.fa-solid{
+    color:rgb(0, 90, 60);
+}
 
 /*Popup button style*/
 
@@ -73,13 +77,13 @@ body{
     left:0px;
     width: 100%;
     height: 100%;
-    background: rgab(0,0,0,0.5);
+    background:white;
     display: none;
 }
 
 .popup{
     visibility: hidden;
-    width:50%;
+    width:70%;
     height: auto;
     background: white;
     border-radius: 4px;
@@ -136,7 +140,7 @@ body{
 }
 
 .mainDiv h1{
-    font-weight: 25px;
+    font-weight: bold;
     color:#001e4d;
     border-bottom: 1px solid #333;
     padding-bottom: 30px;
@@ -185,6 +189,7 @@ body{
     margin: 20px auto 10px;
     color: white;
     font-size: 16px;
+    cursor: pointer;
 }
 
 #home{
@@ -196,6 +201,7 @@ body{
     margin: 20px auto 10px;
     color: white;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .home-page{

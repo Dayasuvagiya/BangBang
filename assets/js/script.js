@@ -92,7 +92,7 @@ const questions = [
         correctOption: "Die Pflanze"
     },
     {
-        question: "../BangBang/assets/images/TV.png",
+        question: "../BangBang/assets/images/tv.png",
         answers : [
             "Das Fenster", 
             "Der Leptop",
@@ -114,12 +114,12 @@ const questions = [
         if(!isClick) {
             if(evt.currentTarget.correctOption === questions[currentQuestion - 1].correctOption) {
                 scrore = scrore + 1;
-                evt.currentTarget.style.backgroundColor = 'green';
+                evt.currentTarget.style.backgroundColor = 'rgb(124, 244, 116)';
                 let scoreElement = document.getElementById('score');
                 scoreElement.innerHTML = scrore;
             } else {
 
-                evt.currentTarget.style.backgroundColor = 'red';
+                evt.currentTarget.style.backgroundColor = 'rgb(251, 119, 119)';
             }
             isClick = true;
         }
@@ -129,7 +129,7 @@ const questions = [
     //function to get element, create attribute and set attributes for style and set images.
     function buildQuizze(){
         let quizz= document.getElementsByClassName('quizz-question')[0];
-        console.log(quizz)
+        console.log(quizz);
         let questionImage= document.createElement('img');
         questionImage.setAttribute('src',questions[currentQuestion-1].question);
         questionImage.setAttribute('width','200px');
@@ -143,7 +143,7 @@ const questions = [
     //loop for answers and given options
         let options = questions[currentQuestion - 1].answers;
         let correctAnswer = questions[currentQuestion - 1].correctOption;
-        console.log({ options})
+        console.log({ options});
 
         for(let i = 0; i < options.length; i++) {
             let option=document.createElement('button');
@@ -173,7 +173,7 @@ const questions = [
         if(questions.length === currentQuestion) {
             document.getElementsByClassName('mainDiv')[0].innerHTML = `
             <h2 class="score-info"> Your total score is ${scrore} / ${questions.length}</h2>
-            <button  id="home" ><a class="home-page" href="game.html">Play again</a></button>
+            <a class="home-page" href="game.html"><button  id="home" >Play again</button></a>
             `
         }
         currentQuestion = currentQuestion + 1;
@@ -192,11 +192,11 @@ const questions = [
     //Popup for the first page instuction
 
     function onOpenPopup() {
-        var popup = document.getElementById("popup1");
+        const popup = document.getElementById("popup1");
         popup.classList.toggle("show");
       }
 
       function onClosePopup() {
-        var popup = document.getElementById("popup1");
+        const popup = document.getElementById("popup1");
         popup.classList.remove("show");
       }
