@@ -54,5 +54,8 @@ The inclusion of additional questions and the implementation of a timer can incr
 ## Design
 
 ### Wireframes
-![Desktop wireframe
+![main-page wireframe](assets/images/images_readme/mainpage_wireframe.png)
+![popup-wireframe](assets/images/images_readme/popup_wireframe.png)
+![maingame-wireframe](assets/images/images_readme/gamepage_wireframe.png)
+
 

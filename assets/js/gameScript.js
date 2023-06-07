@@ -4,7 +4,7 @@ const questions = [
     {
         question: "../BangBang/assets/images/srawberry.png",
         answers : [
-            "Die Strawberry",
+            "Die Birne",
             "Die Erdbeere",
             "Die Kirsche",
             "Der Apfel"
