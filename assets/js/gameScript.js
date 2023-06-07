@@ -138,7 +138,7 @@ const questions = [
     }
 
 
-    //function to get element, create attribute and set attributes for style and set images.
+    //Function to get element, create attribute and set attributes for style and set images.
     function buildQuizze(){
         let quizz= document.getElementsByClassName('quizz-question')[0];
         let questionImage= document.createElement('img');
@@ -152,7 +152,7 @@ const questions = [
         let optionContainer=document.createElement('div');
         optionContainer.setAttribute('id','answer-button');
        
-    //loop for answers and given options
+    //Loop for answers and given options
         let options = questions[currentQuestion - 1].answers;
         let correctAnswer = questions[currentQuestion - 1].correctOption;
 
