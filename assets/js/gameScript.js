@@ -9,6 +9,7 @@ const questions = [
             "Die Kirsche",
             "Der Apfel"
         ],
+        alter: 'Die Erdbeere',
         correctOption: 'Die Erdbeere',
     },
     {
@@ -19,6 +20,7 @@ const questions = [
             "Der Bus",
             "Das Motorrad"
         ],
+        alter: 'Das Fahrrad',
         correctOption: "Das Fahrrad"
     },
     {
@@ -29,6 +31,7 @@ const questions = [
             "Die Gurke",
             "Die Pommes"
         ],
+        alter:'Die Pommes',
         correctOption: "Die Pommes"
     },
     {
@@ -39,6 +42,7 @@ const questions = [
             "Die Tasche",
             "Das Gepäck"
         ],
+        alter:'Die Tasche',
         correctOption: "Die Tasche"
     },
     {
@@ -49,6 +53,7 @@ const questions = [
             "Der Kuchen",
             "Die Butter"
         ],
+        alter:'Der Kuchen',
         correctOption: "Der Kuchen"
     },
     {
@@ -59,6 +64,7 @@ const questions = [
             "Das Schwein",
             "Die Katze"
         ],
+        alter:'Der Hund',
         correctOption: "Der Hund"
     },
     {
@@ -69,6 +75,7 @@ const questions = [
             "Die Pflanze",
             "Die Blumen"
         ],
+        alter:'Die Blumen',
         correctOption: "Die Blumen"
     },
     {
@@ -79,6 +86,7 @@ const questions = [
             "Die Zucchini",
             "Der Mais"
         ],
+        alter:'Die Zitrone',
         correctOption: "Die Zitrone"
     },
     {
@@ -89,6 +97,7 @@ const questions = [
             "Der Topf",
             "Die Blume"
         ],
+        alter:'Die Pflanze',
         correctOption: "Die Pflanze"
     },
     {
@@ -99,6 +108,7 @@ const questions = [
             "Der Schrank",
             "Der Fernseher"
         ],
+        alter:'Der Fernseher',
         correctOption: "Der Fernseher"
     } 
 
@@ -133,6 +143,7 @@ const questions = [
         let quizz= document.getElementsByClassName('quizz-question')[0];
         console.log(quizz);
         let questionImage= document.createElement('img');
+        questionImage.setAttribute('alt',questions[currentQuestion-1].alter);
         questionImage.setAttribute('src',questions[currentQuestion-1].question);
         questionImage.setAttribute('width','200px');
         questionImage.setAttribute('height','150px');
