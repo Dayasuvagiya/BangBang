@@ -1,39 +1,57 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# BangBnag
 
-Welcome,
+The BangBang game is a quiz designed for individuals learning German, allowing them to expand their vocabulary through the use of visual imagery.
 
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+<img width="1034" alt="Screenshot 2023-06-07 at 12 16 51" src="https://github.com/Dayasuvagiya/BangBang/assets/130157117/0f7b1f25-4f2f-4252-a471-4ed5e2dd1016">
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **May 11th, 2023**
+The BangBang site is live, the links can be found [HERE](https://dayasuvagiya.github.io/BangBang/game.html)
 
-## Codeanywhere Reminders
+## UX
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+### Site Purpose
 
-`python3 -m http.server`
+The quiz is specifically crafted to present users with ten challenging questions related to learning the German language. After completion of quizz, users have the opportunity to check their answers. At the end of the quiz, a final score is provided, accompanied by a congratulatory message or an encouragement to retake the quiz.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+### Audience
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+The German vocabulary learner is targeted towards individuals who are interested in expanding their knowledge of the German language and improving their vocabulary skills. This audience may include language learners, students studying German, individuals preparing for language exams, or anyone seeking to enhance their German language proficiency.
 
-`http_server`
+### Communication
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+The design of the quiz was deliberately kept exceptionally simple to ensure user-friendly navigation. By clicking the "Start" button, users can initiate the quiz, and they also have the option to read the instructions before beginning the game. As soon as the quiz starts, the landing page presents the first question instantly, and the visual layout of the quiz facilitates intuitive progression through the ten questions. Upon answering the final question, users are promptly notified of their ultimate score.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+### User Goals
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+The user's primary goal for this game is to enhance their German vocabulary proficiency. By engaging in the quiz and actively participating in the learning process, the user aims to expand their knowledge of German words and their meanings. The game provides an interactive and engaging platform where users can test their understanding of vocabulary in a fun and challenging way.
+If they wish to retake the quiz at the end to better their score, then a button is displayed to start the quiz again.
 
-To log into the Heroku toolbelt CLI:
+### Future Goals
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+To further enhance user engagement and cater to a broader audience, additional questions can be incorporated into the quiz, including varying levels of difficulty. Here are a few examples:
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+Easy level:
+Which word in German translates to "hello"?
+a) Guten Tag
+b) Auf Wiedersehen
+c) Danke
 
----
+Medium level:
+What is the German word for "car"?
+a) Fahrrad
+b) Auto
+c) Haus
 
-Happy coding!
+Difficult level:
+Which verb means "to travel" in German?
+a) Essen
+b) Schlafen
+c) Reisen
+
+To add an extra layer of challenge and time constraint, a timer can be displayed for each question, prompting users to answer within a limited amount of time. For instance, users may have 30 seconds or 1 minute to select their answer before the timer runs out.
+
+The inclusion of additional questions and the implementation of a timer can increase user engagement, create a sense of urgency, and add an element of excitement to the quiz, motivating users to complete it while sharpening their vocabulary skills within a given timeframe.
+
+## Design
+
+### Wireframes
+
