@@ -177,7 +177,7 @@ const questions = [
             allQuestion.classList.toggle('question-answer-visible')
 
             document.getElementsByClassName('mainDiv')[0].innerHTML = `
-            <h2 class="score-info"> Your total score is ${scrore} / ${questions.length}</h2>
+            <h2 class="score-info"> Congratulation! Your total score is ${scrore} / ${questions.length}</h2>
             <a class="home-page" href="game.html"><button  id="home" >Play again</button></a>
             `
         }
