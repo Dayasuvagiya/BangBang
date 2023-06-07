@@ -1,8 +1,9 @@
 # BangBnag
 
-The BangBang game is a quiz designed for individuals learning German, allowing them to expand their vocabulary through the use of visual imagery.
-
-<img width="1034" alt="Screenshot 2023-06-07 at 12 16 51" src="https://github.com/Dayasuvagiya/BangBang/assets/130157117/0f7b1f25-4f2f-4252-a471-4ed5e2dd1016">
+The BangBang game is a quiz, designed for individuals learning German, allowing users to expand their vocabulary through the use of visual imagery.
+<div align="center">
+  <img width="1034" alt="Screenshot 2023-06-07 at 12 16 51" src="https://github.com/Dayasuvagiya/BangBang/assets/130157117/0f7b1f25-4f2f-4252-a471-4ed5e2dd1016">
+  </div>
 
 The BangBang site is live, the links can be found [HERE](https://dayasuvagiya.github.io/BangBang/game.html)
 
@@ -129,13 +130,13 @@ The word "homepage" is clickable and redirects the user to the main page of the 
 
 ### Features Left to Implement
 
-####Multiple levels of difficulty:
+#### Multiple levels of difficulty:
 
 - Provide options for users to select different levels of difficulty.
 - Each difficulty level can introduce progressively complex vocabulary or require more nuanced understanding of the language.
 - Accommodate both beginners and advanced learners, catering to a broader audience.
 
-####Timer:
+#### Timer:
 
 - Integrate a timer feature into the quiz.
 - Users will have a limited amount of time to select their answer for each question.
@@ -147,28 +148,120 @@ The word "homepage" is clickable and redirects the user to the main page of the 
 
 ### Manual Testing
 
-:---------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Test                                                                                                                                                             | Outcome                                                                                                                                                                                                   
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+| Open the first page.                                                                                                                                              | Two buttons working with click to start and for Instruction.
+| Open landing page.                                                                                                                                               | An event listener waits for the DOM to finish loading before running the quiz. The first image and frour options are displayed. 
+| Select the correct answer.                                                                                                                                       | The correct answer button turns green. The other two options are cannot be selected. The Next and Home buttons are displayed.                                                                      
+| Click on the Next One button.                                                                                                                                    | The quiz area is cleared. The subsequent question is displayed together with the possible answers. The numbering of the questions increases by one. T
+| Select an incorrect answer.                                                                                                                                      | The selected incorrect answer turns red. The other options cannot be selected. The Next and Home buttons are displayed.                                  
+| Select a random answer to the last question and click the Next button.                                                                                           | The quiz area is cleared. The final score is displayed as well as a short message. The Next button turns into a button nudging the user to try the quiz again. All question images with correct answer displayed.                  
+| Click on the Play again button.                                                                                                                         | The landing page is loaded and the first question is displayed in the quiz area along with the four options.  
 
-Open landing page.                                                                            | An event listener waits for the DOM to finish loading before running the quiz. The first question and three options are displayed. The theme song does not start playing.   
-| Select the correct answer.                                                                                                                                       | The correct answer button turns green. The other two options are greyed out and cannot be selected. The Next One button is displayed.                                                                      | As Expected |
-| Click on the Next One button.                                                                                                                                    | The quiz area is cleared. The subsequent question is displayed together with the three possible answers. The numbering of the questions increases by one. The Next One button is not displayed.            | As Expected |
-| Select an incorrect answer.                                                                                                                                      | The selected incorrect answer turns red. The correct answer button turns green. The other option is greyed out and cannot be selected. The Next One button is displayed.                                   | As Expected |
-| Select a random answer to the last question and click the Next One button.                                                                                       | The quiz area is cleared. The final score is displayed as well as a short message commenting the result. The Next One button turns into a button nudging the user to try the quiz again.                   | As Expected |
-| Click on the Try Again/Once More button.                                                                                                                         | The landing page is loaded and the first question is displayed in the quiz area along with the three options.                                                                                              | As Expected |
-| Play the quiz from the top by selecting random answers one after the other until the last one.                                                                   | The numbering of the questions systematically increases by one.                                                                                                                                            | As Expected |
-| Play the quiz from the top by selecting the ten correct answers one after the other until the last one then click the Next One button.                           | The quiz area is cleared. The final score displayed reads the following message: "You scored 10 out of 10! Oh.My.God.!". The Next One button turns into a button that reads "Once More!"                   | As Expected |
-| Play the quiz from the top by selecting more than five correct answers (six, for example) one after the other until the last one then click the Next One button. | The quiz area is cleared. The final score displayed reads the following message: "You scored 6 out of 10! Not too shabby!". The Next One button turns into a button that reads "Try again!".               | As Expected |
-| Play the quiz from the top by selecting less than six correct answers (five, for example) one after the other until the last one then click the Next One button. | The quiz area is cleared. The final score displayed reads the following message: "You scored 5 out of 10! Could this quiz BE any harder?". The Next One button turns into a button that reads "Try again!" | As Expected |
-| Click the play button in the audio player. Adjust the volume. Pause the music.                                                                                   | The theme song starts playing. The volume can be adjusted. The music can be paused.                                                                                                                        | As Expected |
-| Click the play button in the audio player and let it play until the end (54 seconds).                                                                            | The theme song does not replay in loop at the end of the 54 seconds.                                                                                                                                       | As Expected |
+### Validator Testing
 
+- The HTML file passed through the [W3C validator](https://validator.w3.org/) with no issues found.
 
+- The CSS file passed through the [Jigsaw validator](https://jigsaw.w3.org/css-validator/) with no issues found.
 
+- The JS file passed through [JSHint](https://jshint.com/) with no issues found.
 
+- The page has an excellent Accessibility rating in Lighthouse for both Desktop and Device.
 
+- The site was tested in Chrome and Safari without issues.
 
+- All links open to external pages as intended.
 
+## Technologies Used
 
+### Main Languages Used
+
+- HTML5
+- CSS3
+- JavaScript
+
+### Frameworks, Libraries & Programs Used
+
+- [Am I Responsive?](http://ami.responsivedesign.is/) - To show the website image on a range of devices.
+
+- [Yandex](https://yandex.com/) - To download quality images for background and png images.
+
+- [Google Developer Tools](https://developers.google.com/web/tools) - To troubleshoot and test features, solve issues with responsiveness and styling.
+
+- [Google Fonts](https://fonts.google.com/) - To import the fonts used for the website.
+
+- [ColorZilla](https://www.colorzilla.com/) - To pick specific shades of colour from the background image.
+
+- [Favicon.io](https://favicon.io/) - To create the favicon.
+
+- [Git](https://git-scm.com/) - For version control.
+
+- [Github](https://github.com/) - To save and store the files for the website.
+
+- [Pexels](https://www.pexels.com/) - To source the background picture.
+
+- [TinyPNG](https://tinypng.com/) - To compress images.
+
+## Deployment & Local Development
+
+### Deployment
+
+The site is deployed using GitHub Pages.
+
+To Deploy the site using GitHub Pages:
+
+1. Login (or signup) to Github.
+2. Go to the repository for this project, [BangBang URL](https://dayasuvagiya.github.io/BangBang/).
+3. Click the settings button.
+4. Select pages in the left hand navigation menu.
+5. From the source dropdown select main branch and press save.
+6. The site has now been deployed. This process may take a few minutes before the site goes live.
+
+### Local Development
+
+#### How to Fork
+
+To fork the repository:
+
+1. Log in (or sign up) to Github.
+2. Go to the repository for this project, [BangBang URL](https://dayasuvagiya.github.io/BangBang/).
+3. Click the Fork button in the top right corner.
+
+#### How to Clone
+
+To clone the repository:
+
+1. Log in (or sign up) to GitHub.
+2. Go to the repository for this project, [BangBang URL](https://dayasuvagiya.github.io/BangBang/).
+3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
+
+## Credits
+
+### Images
+
+- The background image for the quiz was sourced from the website https://yandex.com/.
+- PNG images were also sourced from the same website to be used as question images.
+
+### Code
+
+- The basic structure of the quiz code used in the project drew inspiration from various YouTube videos and W3School Tutorial.
+- The YouTube videos provided valuable insights and guidance on how to structure and organize the quiz code effectively.
+- Additionally, the code implementation incorporated a few tricks inspired by A. Grieves' Love Maths Walkthrough Project from Code Institute.
+- The Love Maths Walkthrough Project served as a reference for implementing certain functionalities or techniques in the quiz code.
+
+### Others
+
+- A special acknowledgment goes to my Code Institute Mentor for their invaluable support and encouragement throughout the development of the quiz.
+- The mentor provided guidance, feedback, and assistance, helping to shape the project and improve its overall quality.
+- am grateful for their contributions and thankful for the guidance and support they provided during the project.
+
+### Future improvements
+- Enhance the quality of commit messages when committing and pushing code to GitHub.
+- Focus on providing clear, concise, and descriptive commit messages.
+- Communicate the purpose and changes made in each commit effectively.
+- Aim for a more organized and structured version history in the GitHub repository.
 
 
 
