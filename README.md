@@ -82,19 +82,25 @@ In the quiz, the questions are presented in the form of images. Users are shown 
 
 #### Landing Page
 
-![Landing Page](assets/images/images_readme/front_page.png)
+<div align="center">
+  <img width="1034" alt="front_page" src="https://github.com/Dayasuvagiya/BangBang/assets/130157117/fead1a6f-0017-421d-9469-acb47d7e76f9">
+  </div>
 
 On the first page of the quiz user can find two buttons a'Start' button and 'Instruction' button, prominent "Start" button is provided, allowing users to begin the quiz with a simple click. Or before going to jump on the game user can also read some instructions. 
 
 #### Popup Button
 
-![Popup page](assets/images/images_readme/popup_button.png)
+<div align="center">
+  <img width="1173" alt="popup_button" src="https://github.com/Dayasuvagiya/BangBang/assets/130157117/9312940c-75b0-46d2-b6af-9eb5010e82a9">
+  </div>
 
 When the user clicks on the "Instruction" button, a popup window will appear, providing instructions and guiding them on how to proceed the game. This popup window serves as a convenient and accessible way to present the instructions without navigating away from the main quiz page.
 
 #### Quiz Area
 
-![Quiz Area](assets/images/images_readme/gamepage.png)
+<div align="center">
+  <img width="1180" alt="gamepage" src="https://github.com/Dayasuvagiya/BangBang/assets/130157117/b573ff21-7b08-4b4b-a993-f1fc5ae0f460">
+  </div>
 
 In the quiz, each question is accompanied by four answer options for the user to choose from. Upon selecting an answer, the button corresponding to the chosen option responds accordingly. If the chosen answer is correct, the button background turns green, indicating the user's accurate response. Conversely, if the user selects an incorrect answer, the button background turns red, signaling an incorrect choice.
 
@@ -106,13 +112,17 @@ At the end of the game, users are provided with the opportunity to review the qu
 
 #### Final Score Screens
 
-![Final Score Screens](assets/images/images_readme/final_page.png)
+<div align="center">
+  <img width="1436" alt="final_page" src="https://github.com/Dayasuvagiya/BangBang/assets/130157117/e27f4bd9-05c3-47cd-9d55-737a99db1171">
+  </div>
 
 Once the user has answered the last question and clicked the "Next One" button, the quiz concludes, and the final score is displayed. The user's performance is evaluated based on the number of correct answers provided throughout the quiz.
 
 #### 404 Page
 
-![404page](assets/images/images_readme/404page.png)
+<div align="center">
+  <img width="1180" alt="404page" src="https://github.com/Dayasuvagiya/BangBang/assets/130157117/d180c835-362a-4f48-b3a4-1f381ff20156">
+  </div>
 
 A 404.html page notifies the user with the following message:"Ooops! Page not found., We can't find the page you'are looking for. Go back to the Homepage".
 The word "homepage" is clickable and redirects the user to the main page of the BangBang Quiz.
