@@ -221,3 +221,11 @@ body{
     display: flex;
     justify-content: center;
 }
+
+.question-answer {
+    display: none;
+}
+
+.question-answer-visible {
+    display: unset !important;
+}
