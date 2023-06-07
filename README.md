@@ -59,3 +59,64 @@ The inclusion of additional questions and the implementation of a timer can incr
 ![maingame-wireframe](assets/images/images_readme/gamepage_wireframe.png)
 
 
+### Colour Scheme
+
+The color scheme chosen for the quiz consists of two primary colors: RGB(0, 90, 60) and RGB(214, 251, 238), along with the classic colors white and black.
+
+The main color, RGB(0, 90, 60), is a deep shade of green that conveys a sense of freshness and vitality. This color choice brings a visually appealing and energizing element to the quiz, creating an engaging environment for the users.
+
+### Typography
+
+The font selection for the quiz includes the use of "Roboto Slab" in both regular and bold variations, which are sourced from the Google Fonts library. 
+"Roboto Slab" is a versatile and modern font choice that offers a balance between readability and aesthetic appeal. The regular variant provides a clean and straightforward appearance, while the bold variant adds emphasis and visual weight to text elements.
+
+### Imagery
+
+The quiz features a simple background image and other quiz images sourced from a reputable search engine, such as [Yandex](https://yandex.com/). The image is chosen to provide a clean and unobtrusive backdrop for the quiz interface. The simplicity of the background image ensures that the focus remains on the quiz content and enhances the overall user experience by creating a visually pleasing environment.
+
+In the quiz, the questions are presented in the form of images. Users are shown various images depicting objects, and their task is to select the correct word that corresponds to the image. This format adds a visual component to the quiz, allowing users to connect the visual representation of the object with their knowledge of German vocabulary.
+
+## Features
+
+### Existing Features
+
+#### Landing Page
+
+![Landing Page](assets/images/images_readme/front_page.png)
+
+On the first page of the quiz user can find two buttons a'Start' button and 'Instruction' button, prominent "Start" button is provided, allowing users to begin the quiz with a simple click. Or before going to jump on the game user can also read some instructions. 
+
+#### Popup Button
+
+![Popup page](assets/images/images_readme/popup_button.png)
+
+When the user clicks on the "Instruction" button, a popup window will appear, providing instructions and guiding them on how to proceed the game. This popup window serves as a convenient and accessible way to present the instructions without navigating away from the main quiz page.
+
+#### Quiz Area
+
+![Quiz Area](assets/images/images_readme/gamepage.png)
+
+In the quiz, each question is accompanied by four answer options for the user to choose from. Upon selecting an answer, the button corresponding to the chosen option responds accordingly. If the chosen answer is correct, the button background turns green, indicating the user's accurate response. Conversely, if the user selects an incorrect answer, the button background turns red, signaling an incorrect choice.
+
+The quiz comprises a total of ten questions, each designed to assess the user's knowledge of German vocabulary. While some questions and answers are created from scratch to suit the quiz's purpose, others have been sourced and adapted from reliable online quizzes. This combination ensures a diverse range of vocabulary challenges and provides an engaging experience for the user.
+
+Upon completing all ten questions, the user is presented with a summary that displays the number of correct and incorrect answers they have provided. This feedback provides a clear overview of their performance and allows users to assess their progress and learning outcomes from the quiz.
+
+At the end of the game, users are provided with the opportunity to review the quiz and see the correct answers along with the corresponding images. This feature aims to support users in their learning journey and aid in their further improvement.
+
+#### Final Score Screens
+
+![Final Score Screens](assets/images/images_readme/final_page.png)
+
+Once the user has answered the last question and clicked the "Next One" button, the quiz concludes, and the final score is displayed. The user's performance is evaluated based on the number of correct answers provided throughout the quiz.
+
+#### 404 Page
+
+![404page](assets/images/images_readme/404page.png)
+
+A 404.html page notifies the user with the following message:"Ooops! Page not found., We can't find the page you'are looking for. Go back to the Homepage".
+The word "homepage" is clickable and redirects the user to the main page of the BangBang Quiz.
+
+
+
+
