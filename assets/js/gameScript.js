@@ -101,7 +101,7 @@ const questions = [
         correctOption: "Die Pflanze"
     },
     {
-        question: "../BangBang/assets/images/tv.png",
+        question: "../BangBang/assets/images/television.png",
         answers : [
             "Das Fenster", 
             "Der Leptop",
