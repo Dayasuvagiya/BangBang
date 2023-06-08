@@ -37,14 +37,7 @@
        - [Code](#code)
        - [Others](#others)
        - [Future Improvements](#future-improvements)
-
-
-
-
-
-
-
-
+       
 # BangBnag
 
 The BangBang game is a quiz, designed for individuals learning German, allowing users to expand their vocabulary through the use of visual imagery.
