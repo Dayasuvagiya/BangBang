@@ -1,3 +1,50 @@
+### Table of contents
+- [BangBnag](#bangbnag)
+  - [UX](#ux)
+      - [Site Purpose](#site-purpose)
+      - [Audience](#audience)
+      - [Communication](#communication)
+      - [User Goals](user-goals)
+      - [Future Goals](future-goals)
+  - [Design](design)
+      - [Wireframes](wireframes)
+      - [Colour Scheme](colour-scheme)
+      - [Typography](typography)
+      - [Imagery](imagery)
+  - [Features](features)
+      - [Existing Features](existing-features)
+        - [Landing Page](landing-page)
+        - [Popup Button](popup-button)
+        - [Quiz Area](quiz-area)
+        - [Final Score Screens](final-score-screens)
+        - [404 Page](404-page)
+   - [Features Left to Implement](features-left-to-implement)
+       - [Multiple levels of difficulty](multiple-levels-of-difficulty)
+       - [Timer](timer)
+   - [Testing](testing) 
+       - [Manual Testing](manual-testing)
+       - [Validator Testing](validator-testing)
+   - [Technologies Used](technologies-used)
+       - [Main Languages Used](main-languages-used)
+       - [Programs Used](programs-used)
+   - [Deployment And Local Development](deployment-local-development)
+       - [Deployment](deployment)
+       - [Local Development](local-development)
+         - [How to Fork](how-to-fork)
+         - [How to Clone](how-to-clone)
+   - [Credits](Credits)
+       - [Images](images)
+       - [Code](code)
+       - [Others](others)
+       - [Future Improvements](future-improvements)
+
+
+
+
+
+
+
+
 # BangBnag
 
 The BangBang game is a quiz, designed for individuals learning German, allowing users to expand their vocabulary through the use of visual imagery.
@@ -180,7 +227,7 @@ The word "homepage" is clickable and redirects the user to the main page of the 
 - CSS3
 - JavaScript
 
-### Frameworks, Libraries & Programs Used
+### Programs Used
 
 - [Am I Responsive?](http://ami.responsivedesign.is/) - To show the website image on a range of devices.
 
@@ -257,7 +304,7 @@ To clone the repository:
 - The mentor provided guidance, feedback, and assistance, helping to shape the project and improve its overall quality.
 - am grateful for their contributions and thankful for the guidance and support they provided during the project.
 
-### Future improvements
+### Future Improvements
 - Enhance the quality of commit messages when committing and pushing code to GitHub.
 - Focus on providing clear, concise, and descriptive commit messages.
 - Communicate the purpose and changes made in each commit effectively.
