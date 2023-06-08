@@ -13,15 +13,15 @@
       - [Imagery](#imagery)
   - [Features](#features)
       - [Existing Features](#existing-features)
-        - [Landing Page](#landing-page)
-        - [Popup Button](#popup-button)
-        - [Quiz Area](#quiz-area)
-        - [Final Score Screens](#final-score-screens)
-        - [404 Page](#404-page)
+          - [Landing Page](#landing-page)
+          - [Popup Button](#popup-button)
+          - [Quiz Area](#quiz-area)
+          - [Final Score Screens](#final-score-screens)
+          - [404 Page](#404-page)
    - [Features Left to Implement](#features-left-to-implement)
        - [Multiple levels of difficulty](#multiple-levels-of-difficulty)
        - [Timer](#timer)
-   - [Testing](testing) 
+   - [Testing](#testing) 
        - [Manual Testing](#manual-testing)
        - [Validator Testing](#validator-testing)
    - [Technologies Used](#technologies-used)
@@ -242,7 +242,7 @@ The word "homepage" is clickable and redirects the user to the main page of the 
 
 - [TinyPNG](https://tinypng.com/) - To compress images.
 
-## Deployment & Local Development
+## Deployment And Local Development
 
 ### Deployment
 
