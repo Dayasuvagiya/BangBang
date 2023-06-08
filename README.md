@@ -27,7 +27,7 @@
    - [Technologies Used](#technologies-used)
        - [Main Languages Used](#main-languages-used)
        - [Programs Used](#programs-used)
-   - [Deployment And Local Development](#deployment-local-development)
+   - [Deployment And Local Development](#deployment-and-local-development)
        - [Deployment](#deployment)
        - [Local Development](#local-development)
          - [How to Fork](#how-to-fork)
