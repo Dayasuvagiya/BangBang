@@ -121,7 +121,7 @@ In the quiz, the questions are presented in the form of images. Users are shown 
 
 ### Existing Features
 
-#### Landing Page :
+#### Landing Page
 
 <div align="center">
   <img width="1034" alt="front_page" src="https://github.com/Dayasuvagiya/BangBang/assets/130157117/fead1a6f-0017-421d-9469-acb47d7e76f9">
@@ -129,7 +129,7 @@ In the quiz, the questions are presented in the form of images. Users are shown 
 
 On the first page of the quiz user can find two buttons a'Start' button and 'Instruction' button, prominent "Start" button is provided, allowing users to begin the quiz with a simple click. Or before going to jump on the game user can also read some instructions. 
 
-#### Popup Button :
+#### Popup Button
 
 <div align="center">
   <img width="1173" alt="popup_button" src="https://github.com/Dayasuvagiya/BangBang/assets/130157117/9312940c-75b0-46d2-b6af-9eb5010e82a9">
@@ -137,7 +137,7 @@ On the first page of the quiz user can find two buttons a'Start' button and 'Ins
 
 When the user clicks on the "Instruction" button, a popup window will appear, providing instructions and guiding them on how to proceed the game. This popup window serves as a convenient and accessible way to present the instructions without navigating away from the main quiz page.
 
-#### Quiz Area :
+#### Quiz Area
 
 <div align="center">
   <img width="1180" alt="gamepage" src="https://github.com/Dayasuvagiya/BangBang/assets/130157117/b573ff21-7b08-4b4b-a993-f1fc5ae0f460">
@@ -151,7 +151,7 @@ Upon completing all ten questions, the user is presented with a summary that dis
 
 At the end of the game, users are provided with the opportunity to review the quiz and see the correct answers along with the corresponding images. This feature aims to support users in their learning journey and aid in their further improvement.
 
-#### Final Score Screens :
+#### Final Score Screens
 
 <div align="center">
   <img width="1436" alt="final_page" src="https://github.com/Dayasuvagiya/BangBang/assets/130157117/e27f4bd9-05c3-47cd-9d55-737a99db1171">
@@ -159,7 +159,7 @@ At the end of the game, users are provided with the opportunity to review the qu
 
 Once the user has answered the last question and clicked the "Next One" button, the quiz concludes, and the final score is displayed. The user's performance is evaluated based on the number of correct answers provided throughout the quiz.
 
-#### 404 Page :
+#### 404 Page
 
 <div align="center">
   <img width="1180" alt="404page" src="https://github.com/Dayasuvagiya/BangBang/assets/130157117/d180c835-362a-4f48-b3a4-1f381ff20156">
